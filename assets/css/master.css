@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+  width: 100vw;
+  background-color: orange;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1
+}
+
+footer {
+  height: 80px;
+  width: 100vw;
+  background-color: red;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+
+}
+
+main {
+  height: calc(100vh - 80px);
+  background-color: yellow;
+  overflow-y: auto;
+  padding-top: 80px;
+  margin-left: 50px;
+}
+
+
+aside {
+  background-color: purple;
+  width: 50px;
+  height: calc(100vh - 80px);
+  float: left;
+  overflow: scroll;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.card {
+  height: 200px;
+  width: 200px;
+  background-color: lightgreen;
+  margin: 5px;
+}
