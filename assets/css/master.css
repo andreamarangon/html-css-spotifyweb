@@ -5,8 +5,13 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+
 header {
-  height: 80px;
+  height: 100px;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
@@ -18,7 +23,7 @@ header {
 aside {
   background-color: #000000;
   width: 50px;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 100px);
   float: left;
   position: fixed;
   top: 0;
@@ -28,10 +33,10 @@ aside {
 
 
 main {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 100px);
   background-color: #141922;
   overflow-y: auto;
-  padding-top: 80px;
+  padding-top: 100px;
   margin-left: 50px;
   display: flex;
   justify-content: space-around;
@@ -42,7 +47,7 @@ main {
 
 
 footer {
-  height: 80px;
+  height: 100px;
   width: 100vw;
   background-color: #282828;
   position: fixed;
@@ -63,28 +68,129 @@ footer {
 /* SIDEBAR */
 .sidebar {
  position: relative;
+ padding-left: 11px;
 }
 
 .sidebar i {
-  color: #fff;
+  color: gray;
   font-size: 25px;
-  padding: 5px 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
+/* spotify-menu-up */
+.logo-spotify-mark i{
+  font-size: 31px;
+}
 
-
-.logo-spotify-menu-down {
- position: absolute;
- bottom: 0;
- left: 0;
+.fab.fa-spotify {
+  color: #fff;
 }
 
 .logo-spotify img {
   width: 75%;
   display: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .logo-text {
+  display: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.sidebar a, .sidebar i {
+  color: gray;
+}
+
+a:hover i,
+a:hover span {
+  color: #fff;
+}
+
+.spotify-menu-up a{
+  display: flex;
+  align-items: center;
+}
+
+.spotify-menu-up span {
+  margin-left: 10px;
+}
+
+/* spotify-menu-center */
+.spotify-menu-center ul li a:hover {
+  color: #fff;
+}
+
+.playlist-creator a{
+  display: flex;
+  align-items: center;
+}
+
+.playlist-creator .fa-plus-square {
+  margin-right: 10px;
+  font-size: 45px;
+}
+
+.spotify-menu-center li {
+  margin-top: 12px;
+  text-decoration: none;
+}
+
+.spotify-menu-center {
+  display: none;
+}
+
+/* spotify-menu-down */
+.spotify-menu-down {
+ position: absolute;
+ bottom: 5px;
+ left: 11px;
+ width: 89%;
+}
+
+.my-download-app i {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  padding-right: 10px;
+}
+
+.my-account {
+  margin-top: 5px;
+}
+
+.my-account i {
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+.my-account span {
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  display: none;
+}
+
+.my-download-app, .my-account {
+  display: flex;
+  align-items: center;
+}
+
+.spotify-menu-down hr {
+  border: 1px solid gray;
+  display: none;
+}
+
+.my-download-app span {
   display: none;
 }
 
@@ -103,27 +209,27 @@ footer {
 }
 
 .mt-1 {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .mt-2 {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .mt-3 {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .mb-1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .mb-2 {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .mb-3 {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .pb-1 {
@@ -151,7 +257,7 @@ footer {
 /* MEDIA QUERY */
 @media all and (min-width: 768px){
   aside {
-    width: 200px;
+    width: 215px;
   }
 
   .logo-spotify-mark {
@@ -159,7 +265,7 @@ footer {
   }
 
   .logo-spotify img {
-    width: 75%;
+    width: 72%;
     display: block;
   }
 
@@ -167,9 +273,25 @@ footer {
     display: inline-block;
   }
 
+  .spotify-menu-center {
+    display: block;
+  }
 
+  .sidebar {
+   padding-left: 17px;
+  }
 
+  .spotify-menu-down hr {
+    display: block;
+  }
 
+  .my-account span {
+    display: block;
+  }
+
+  .my-download-app span {
+    display: inline-block;
+  }
 
 
 }
