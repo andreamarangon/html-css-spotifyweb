@@ -152,16 +152,18 @@ a:hover span {
 /* spotify-menu-down */
 .spotify-menu-down {
  position: absolute;
- bottom: 5px;
- left: 11px;
- width: 89%;
+ bottom: 0;
+ left: 0;
+ width: 95%;
+ background-color: #000000;
+ padding-left: 11px
 }
 
 .my-download-app i {
   font-size: 16px;
   margin-left: 5px;
   margin-bottom: 5px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .my-account {
@@ -170,7 +172,7 @@ a:hover span {
 
 .my-account i {
   font-size: 28px;
-  padding-right: 10px;
+  margin-right: 10px;
 }
 
 .my-account span {
@@ -194,6 +196,28 @@ a:hover span {
   display: none;
 }
 
+/* HEADER */
+header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-upgrade {
+  margin-right: 21px;
+  margin-top: 40px;
+}
+
+.button-upgrade .my-btn-upgrade {
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 12px 35px;
+}
+
+.button-upgrade .my-btn-upgrade:hover {
+  font-size: 16px;
+}
 
 /* UTILITY */
 .text-white {
@@ -246,6 +270,10 @@ a:hover span {
 
 .bg-white {
   background-color: #fff;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 
