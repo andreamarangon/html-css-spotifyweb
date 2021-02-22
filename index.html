@@ -27,21 +27,24 @@
         <li class="logo-spotify-mark">
           <i class="fab fa-spotify"></i>
         </li>
-        <li>
+        <li class="mt-1">
           <a href="#">
-            <i class="fas fa-home"></i>
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z" fill="currentColor"></path>
+            </svg>
             <span class="logo-text">Home</span>
           </a>
         </li>
-        <li>
+        <li class="mt-1">
           <a href="#">
-            <i class="fas fa-search"></i>
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z" fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
             <span class="logo-text">Cerca</span>
           </a>
         </li>
-        <li>
+        <li class="mt-1">
           <a href="#">
-            <i class="fas fa-swatchbook"></i>
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z" fill="currentColor"></path>
+            </svg>
             <span class="logo-text">La tua libreria</span>
           </a>
         </li>
@@ -81,20 +84,123 @@
   </aside>
 
   <main>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
-    <div class="card"></div>
+    <!-- CATEGORY SECTION -->
+    <section>
+      <div class="container-flex category">
+        <a href="#">
+          <div class="text-gray text-uppercase text-center">in evidenza</div>
+        </a>
+        <a href="#">
+          <div class="text-gray text-uppercase text-center">podcast</div>
+        </a>
+        <a href="#">
+          <div class="text-gray text-uppercase text-center">classifiche</div>
+        </a>
+        <a href="#">
+          <div class="text-gray text-uppercase text-center">generi e mood</div>
+        </a>
+        <a href="#">
+          <div class="text-gray text-uppercase text-center">nuove uscite</div>
+        </a>
+        <a href="#">
+          <div class="text-gray text-uppercase text-center">scopri</div>
+        </a>
+      </div>
+    </section>
+    <!-- RECENTLY PLAYED SECTION -->
+    <section class="recently-played">
+      <h1 class="text-white">Recently played</h1>
+      <div class="container-flex mt-2">
+        <div class="box-album-cover">
+          <div class="card">
+            <a href="#" class="thumbnail">
+              <img src="./assets/img/NBT-Moral-Panic.jpg" alt="NBT_album_cover">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </a>
+          </div>
+          <h3 class="text-white text-center mt-1">Moral Panic</h3>
+          <h4 class="text-gray text-center mt-1">Nothing But Thieves</h4>
+        </div>
+        <div class="box-album-cover">
+          <div class="card">
+            <a href="#" class="thumbnail">
+              <img src="./assets/img/Drive-Soundtrack.jpg" alt="Drive-Soundtrack_album_cover">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </a>
+          </div>
+          <h3 class="text-white text-center mt-1">Drive: Original Motion Picture Soundtrack</h3>
+          <h4 class="text-gray text-center mt-1">Cliff Martinez</h4>
+        </div>
+        <div class="box-album-cover">
+          <div class="card">
+            <a href="#" class="thumbnail">
+              <img src="./assets/img/Slipknot_Iowa.jpg" alt="Slipknot_Iowa_album_cover">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </a>
+          </div>
+          <h3 class="text-white text-center mt-1">Iowa</h3>
+          <h4 class="text-gray text-center mt-1">Slipknot</h4>
+        </div>
+        <div class="box-album-cover">
+          <div class="card">
+            <a href="#" class="thumbnail">
+              <img src="./assets/img/tool-10000-days.jpeg" alt="tool-10000-days_almum_cover">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </a>
+          </div>
+          <h3 class="text-white text-center mt-1">10000 days</h3>
+          <h4 class="text-gray text-center mt-1">Tool</h4>
+        </div>
+        <div class="box-album-cover">
+          <div class="card">
+            <a href="#" class="thumbnail">
+              <img src="./assets/img/him.jpg" alt="him_album_cover">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </a>
+          </div>
+          <h3 class="text-white text-center mt-1">Venus Doom</h3>
+          <h4 class="text-gray text-center mt-1">HIM</h4>
+        </div>
+        <div class="box-album-cover">
+          <div class="card">
+            <a href="#" class="thumbnail">
+              <img src="./assets/img/qotsa.jpg" alt="qotsa_album_cover">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </a>
+          </div>
+          <h3 class="text-white text-center mt-1">Song For The Deaf</h3>
+          <h4 class="text-gray text-center mt-1">Queens Of The Stone Age</h4>
+        </div>
+      </div>
+    </section>
+    <!-- CREATED FOR SECTION -->
+    <section class="created-for">
+      <h1 class="text-white">Creato per John Doe</h1>
+      <p class="text-gray mt-1">Più ascolti, più accurati saranno i suggerimenti.</p>
+      <div class="container-flex mt-2">
+        <div class="box-album-cover">
+          <div class="card">
+            <a href="#" class="thumbnail">
+              <img src="./assets/img/NBT-Moral-Panic.jpg" alt="NBT_album_cover">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </a>
+          </div>
+          <h3 class="text-white text-center mt-1">Moral Panic</h3>
+          <h4 class="text-gray text-center mt-1">Nothing But Thieves</h4>
+        </div>
+        <div class="box-album-cover">
+          <div class="card">
+            <a href="#" class="thumbnail">
+              <img src="./assets/img/Drive-Soundtrack.jpg" alt="Drive-Soundtrack_album_cover">
+              <div class="layover"><i class="far fa-play-circle"></i></div>
+            </a>
+          </div>
+          <h3 class="text-white text-center mt-1">Drive: Original Motion Picture Soundtrack</h3>
+          <h4 class="text-gray text-center mt-1">Cliff Martinez</h4>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>

@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 28px;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
@@ -38,10 +42,10 @@ main {
   overflow-y: auto;
   padding-top: 100px;
   margin-left: 50px;
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: flex-start; */
 }
 
 
@@ -57,14 +61,6 @@ footer {
 
 }
 
-
-.card {
-  height: 150px;
-  width: 150px;
-  background-color: lightgreen;
-  margin: 5px;
-
-}
 /* SIDEBAR */
 .sidebar {
  position: relative;
@@ -106,9 +102,13 @@ a {
   text-decoration: none;
 }
 
-
-.sidebar a, .sidebar i {
+.sidebar a {
   color: gray;
+}
+
+a:hover svg,
+a:hover span {
+  color: #fff;
 }
 
 a:hover i,
@@ -219,6 +219,82 @@ header {
   font-size: 16px;
 }
 
+
+
+/* MAIN */
+section {
+  /* display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start; */
+  padding: 20px;
+}
+
+.container-flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+/* CATEGORY SECTION */
+.category {
+  justify-content: center;
+}
+
+.category a {
+  margin: 20px 14px;
+}
+
+.category a:hover div {
+  color: #fff;
+}
+
+/* RECENTLY PLAYED SECTION */
+.box-album-cover {
+  margin-right: 12px;
+  width: 150px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  height: 150px;
+  width: 150px;
+  background-color: lightgreen;
+  position: relative;
+}
+
+.layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.layover i {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  font-size: 50px;
+  color: #fff;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.card:hover .layover {
+  display: block;
+}
+
+
 /* UTILITY */
 .text-white {
   color: #fff;
@@ -233,15 +309,15 @@ header {
 }
 
 .mt-1 {
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 
 .mt-2 {
-  margin-top: 2rem;
+  margin-top: 20px;
 }
 
 .mt-3 {
-  margin-top: 3rem;
+  margin-top: 30px;
 }
 
 .mb-1 {
@@ -276,9 +352,9 @@ header {
   text-transform: uppercase;
 }
 
-
-
-
+.text-center {
+  text-align: center;
+}
 
 
 
