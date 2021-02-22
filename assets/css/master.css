@@ -260,10 +260,20 @@ section {
   width: 100%;
 }
 
+.card-round img {
+  width: 100%;
+  border-radius: 50%;
+}
+
 .card {
   height: 150px;
   width: 150px;
-  background-color: lightgreen;
+  position: relative;
+}
+
+.card-round {
+  height: 150px;
+  width: 150px;
   position: relative;
 }
 
@@ -277,6 +287,18 @@ section {
   display: none;
 }
 
+.layover-round {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  border-radius: 50%;
+}
+
+.layover-round i,
 .layover i {
   display: block;
   position: absolute;
@@ -290,7 +312,8 @@ section {
   justify-content: center;
 }
 
-.card:hover .layover {
+.card:hover .layover,
+.card-round:hover .layover-round {
   display: block;
 }
 
