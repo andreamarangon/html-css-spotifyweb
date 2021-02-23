@@ -249,16 +249,15 @@ header {
 }
 
 /* MAIN */
-/* section {
+main section {
   padding: 15px 20px;
-} */
+}
 
 .container-flex {
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-start;
-  padding: 15px 20px;
 }
 
 /* CATEGORY SECTION */
@@ -350,9 +349,14 @@ footer {
   align-items: center;
 }
 
+footer section {
+  width: calc(100% / 3);
+}
+
+/* section left */
 .track-listening {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -379,13 +383,34 @@ footer {
   font-size: 18px;
 }
 
+/* section center */
 .music-commands-up {
-  width: 180px;
+  /* width: 180px; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: center;
 }
+
+.music-commands-down {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+/* section right */
+.multimedia-commands i {
+  margin-right: 8px;
+}
+
+.multimedia-commands {
+  /* width: 200px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
 
 /* UTILITY */
 .text-white {
@@ -481,10 +506,6 @@ footer {
     display: inline;
   }
 
-  .track-icon i {
-    display: inline;
-  }
-
   .spotify-menu-down hr {
     display: block;
   }
@@ -505,6 +526,10 @@ footer {
 @media all and (min-width: 992px){
   .box-album-cover {
     width: calc(100% / 4 - 15px);
+  }
+  
+  .track-icon i {
+    display: inline;
   }
 
 
