@@ -397,13 +397,19 @@ footer section {
 }
 
 /* section center */
-.music-commands-up {
+.music-commands {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.music-commands-up {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .music-commands-up i {
-  padding: 0 10px;
   cursor: pointer;
 }
 
@@ -412,7 +418,14 @@ footer section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
 
+.music-commands .fa-play-circle {
+  font-size: 30px;
+}
+
+.music-commands .fa-play-circle:hover {
+  font-size: 33px;
 }
 
 /* section right */
@@ -426,8 +439,27 @@ footer section {
   display: flex;
   justify-content: flex-end;
 }
+/* input range custom */
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 60%; /* Specific width is required for Firefox. */
+}
 
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
 
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent; /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
 /* UTILITY */
 .text-white {
   color: #fff;
