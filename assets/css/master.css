@@ -440,26 +440,38 @@ footer section {
   justify-content: flex-end;
 }
 /* input range custom */
-input[type=range] {
-  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-  width: 60%; /* Specific width is required for Firefox. */
-}
 
-input[type=range]::-webkit-slider-thumb {
+.slider {
   -webkit-appearance: none;
-}
-
-input[type=range]:focus {
-  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
-}
-
-input[type=range]::-ms-track {
   width: 100%;
-  cursor: pointer;
-  background: transparent; /* Hides the slider so custom styles can be added */
-  border-color: transparent;
-  color: transparent;
+  height: 4px;
+  border-radius: 5px;
+  background: gray;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
 }
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+/* .slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #4CAF50;
+  cursor: pointer;
+} */
+
+
 /* UTILITY */
 .text-white {
   color: #fff;
