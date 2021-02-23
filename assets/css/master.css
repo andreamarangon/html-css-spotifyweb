@@ -233,7 +233,7 @@ header {
 
 .button-upgrade {
   margin-right: 21px;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .button-upgrade .my-btn-upgrade {
@@ -414,10 +414,10 @@ footer section {
 }
 
 .music-commands-down {
-  margin-top: 15px;
+  width: 100%;
+  margin-top: 10px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 .music-commands .fa-play-circle {
@@ -429,18 +429,18 @@ footer section {
 }
 
 /* section right */
-.multimedia-commands i,
-.multimedia-commands input {
-  margin-right: 8px;
+.multimedia-commands i {
+  margin-right: 12px;
   cursor: pointer;
+  font-size: 13px;
 }
 
 .multimedia-commands {
   display: flex;
   justify-content: flex-end;
 }
-/* input range custom */
 
+/* input range custom */
 .slider {
   -webkit-appearance: none;
   width: 100%;
@@ -451,6 +451,7 @@ footer section {
   opacity: 0.7;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  margin: 0 10px;
 }
 
 .slider::-webkit-slider-thumb {
@@ -471,6 +472,11 @@ footer section {
   cursor: pointer;
 } */
 
+.slidecontainer {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
 
 /* UTILITY */
 .text-white {
@@ -571,6 +577,11 @@ footer section {
 
   .my-download-app span {
     display: inline-block;
+  }
+
+  .track-img img {
+    height: 45px;
+    width: 45px;
   }
 
 }
