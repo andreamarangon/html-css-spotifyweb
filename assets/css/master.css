@@ -63,6 +63,9 @@ footer {
 
 /* SIDEBAR */
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
  /* position: relative; */
  /* padding-left: 11px; */
 }
@@ -169,9 +172,9 @@ a:hover span {
 
 /* spotify-menu-down */
 .spotify-menu-down {
- position: absolute;
+ /* position: absolute;
  bottom: 0;
- left: 0;
+ left: 0; */
  width: 100%;
  background-color: #000000;
  padding-left: 11px
