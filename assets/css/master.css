@@ -357,12 +357,15 @@ footer section {
 .track-listening {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
   align-items: center;
 }
 
 .track-listening div {
   margin-left: 10px;
+}
+
+.track-listening i {
+  margin-left: 5px;
 }
 
 .track-img img {
@@ -375,20 +378,33 @@ footer section {
 }
 
 .track-info span {
-  display: block;
+  cursor: pointer;
+}
+
+.track-info span:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 .track-icon i {
   display: block;
   font-size: 18px;
+  cursor: pointer;
+}
+
+.track-icon i:hover {
+  color: #fff;
 }
 
 /* section center */
 .music-commands-up {
-  /* width: 180px; */
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+}
+
+.music-commands-up i {
+  padding: 0 10px;
+  cursor: pointer;
 }
 
 .music-commands-down {
@@ -400,14 +416,14 @@ footer section {
 }
 
 /* section right */
-.multimedia-commands i {
+.multimedia-commands i,
+.multimedia-commands input {
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .multimedia-commands {
-  /* width: 200px; */
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
 }
 
@@ -490,7 +506,6 @@ footer section {
   }
 
   .logo-spotify img {
-    /* width: 70%; */
     display: block;
   }
 
@@ -500,10 +515,6 @@ footer section {
 
   .spotify-menu-center {
     display: block;
-  }
-
-  .track-info span {
-    display: inline;
   }
 
   .spotify-menu-down hr {
@@ -518,20 +529,16 @@ footer section {
     display: inline-block;
   }
 
-
-
-
 }
 
 @media all and (min-width: 992px){
   .box-album-cover {
     width: calc(100% / 4 - 15px);
   }
-  
+
   .track-icon i {
     display: inline;
   }
-
 
 }
 
@@ -539,6 +546,5 @@ footer section {
   .box-album-cover {
     width: calc(100% / 6 - 15px);
   }
-
 
 }
