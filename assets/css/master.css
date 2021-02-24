@@ -160,11 +160,6 @@ a:hover span {
   align-items: center;
 }
 
-.playlist-creator .fa-plus-square {
-  margin-right: 10px;
-  font-size: 45px;
-}
-
 .spotify-menu-center li {
   margin-top: 12px;
   text-decoration: none;
@@ -612,6 +607,14 @@ footer section {
 
 }
 
-@media all and (min-width: 1200px){
+@media all and (max-width: 500px){
+  .track-listening,
+  .multimedia-commands {
+    display: none
+  }
+
+  .music-commands {
+    width: 100%;
+  }
 
 }
