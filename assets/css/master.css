@@ -1,7 +1,7 @@
 /* LAYOUT */
 * {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1
+  z-index: 1;
 }
 
 aside {
@@ -35,7 +35,6 @@ aside {
   z-index: 2;
 }
 
-
 main {
   height: calc(100vh - 90px);
   background-color: #141922;
@@ -48,8 +47,6 @@ main {
   align-items: flex-start; */
 }
 
-
-
 footer {
   height: 90px;
   width: 100vw;
@@ -58,7 +55,6 @@ footer {
   bottom: 0;
   right: 0;
   z-index: 3;
-
 }
 
 /* SIDEBAR */
@@ -69,7 +65,7 @@ footer {
 }
 
 .sidebar i {
-  color: #A3A3A3;
+  color: #a3a3a3;
   font-size: 25px;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -82,18 +78,19 @@ footer {
 }
 
 .home-logo {
-  border-left: 2px solid #A0EB2E;
+  border-left: 2px solid #a0eb2e;
 }
 
 ul li a.home-logo {
   color: #fff;
 }
 
-.lens-logo, .library-logo {
+.lens-logo,
+.library-logo {
   margin-left: 2px;
 }
 
-.logo-spotify-mark i{
+.logo-spotify-mark i {
   font-size: 31px;
 }
 
@@ -120,7 +117,7 @@ a {
 }
 
 .sidebar a {
-  color: #A3A3A3;
+  color: #a3a3a3;
 }
 
 a:hover svg,
@@ -133,11 +130,11 @@ a:hover span {
   color: #fff;
 }
 
-.plus-square:hover {
+.playlist-creator:hover .plus-square {
   background-color: #fff;
 }
 
-.spotify-menu-up a{
+.spotify-menu-up a {
   display: flex;
   align-items: center;
 }
@@ -155,7 +152,7 @@ a:hover span {
   color: #fff;
 }
 
-.playlist-creator a{
+.playlist-creator a {
   display: flex;
   align-items: center;
 }
@@ -177,7 +174,7 @@ a:hover span {
 .plus-square {
   height: 40px;
   width: 40px;
-  background-color: #A3A3A3;
+  background-color: #a3a3a3;
   color: #000;
   display: flex;
   justify-content: center;
@@ -188,9 +185,9 @@ a:hover span {
 
 /* spotify-menu-down */
 .spotify-menu-down {
- width: 100%;
- background-color: #000000;
- padding-left: 11px
+  width: 100%;
+  background-color: #000000;
+  padding-left: 11px;
 }
 
 .my-download-app i {
@@ -216,13 +213,14 @@ a:hover span {
   display: none;
 }
 
-.my-download-app, .my-account {
+.my-download-app,
+.my-account {
   display: flex;
   align-items: center;
 }
 
 .spotify-menu-down hr {
-  border: 1px solid #A3A3A3;
+  border: 1px solid #a3a3a3;
   display: none;
   width: 95%;
 }
@@ -282,7 +280,7 @@ main section {
 .custom-line {
   height: 2px;
   width: 30px;
-  background-color: #A0EB2E;
+  background-color: #a0eb2e;
   margin: 0 auto;
 }
 
@@ -333,7 +331,7 @@ main section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate( -50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 50px;
   color: #fff;
 }
@@ -448,11 +446,11 @@ footer section {
   width: 100%;
   height: 4px;
   border-radius: 5px;
-  background: #A3A3A3;
+  background: #a3a3a3;
   outline: none;
   opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
   margin: 0 10px;
   overflow: hidden;
 }
@@ -493,7 +491,7 @@ footer section {
 }
 
 .text-gray {
-  color: #A3A3A3;
+  color: #a3a3a3;
 }
 
 .mt-1 {
@@ -544,10 +542,8 @@ footer section {
   text-align: center;
 }
 
-
-
 /* MEDIA QUERY */
-@media all and (min-width: 768px){
+@media all and (min-width: 768px) {
   aside {
     width: 215px;
   }
@@ -592,11 +588,9 @@ footer section {
   .box-album-cover {
     width: calc(100% / 4 - 15px);
   }
-
 }
 
-@media all and (min-width: 992px){
-
+@media all and (min-width: 992px) {
   .track-icon i {
     display: inline;
   }
@@ -604,17 +598,15 @@ footer section {
   .box-album-cover {
     width: calc(100% / 6 - 15px);
   }
-
 }
 
-@media all and (max-width: 500px){
+@media all and (max-width: 500px) {
   .track-listening,
   .multimedia-commands {
-    display: none
+    display: none;
   }
 
   .music-commands {
     width: 100%;
   }
-
 }
