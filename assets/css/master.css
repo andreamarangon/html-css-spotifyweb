@@ -308,7 +308,7 @@ main section {
   position: relative;
 }
 
-.layover {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -320,7 +320,7 @@ main section {
   display: none;
 }
 
-.layover-round {
+.overlay-round {
   position: absolute;
   top: 0;
   left: 0;
@@ -331,8 +331,8 @@ main section {
   border-radius: 50%;
 }
 
-.layover-round i,
-.layover i {
+.overlay-round i,
+.overlay i {
   display: block;
   position: absolute;
   top: 50%;
@@ -342,8 +342,8 @@ main section {
   color: #fff;
 }
 
-.card:hover .layover,
-.card-round:hover .layover-round {
+.card:hover .overlay,
+.card-round:hover .overlay-round {
   display: block;
 }
 
