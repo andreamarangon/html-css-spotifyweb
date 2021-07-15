@@ -292,10 +292,14 @@ main section {
 
 .card img {
   width: 100%;
+  display: block;
+  height: auto;
 }
 
 .card-round img {
   width: 100%;
+  display: block;
+  height: auto;
   border-radius: 50%;
 }
 
@@ -308,7 +312,9 @@ main section {
   position: absolute;
   top: 0;
   left: 0;
-  height: 97.6%;
+  bottom: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
@@ -318,7 +324,7 @@ main section {
   position: absolute;
   top: 0;
   left: 0;
-  height: 97.6%;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
