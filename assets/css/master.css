@@ -429,6 +429,8 @@ footer section {
   margin-top: 10px;
   display: flex;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .music-commands .fa-play-circle {
