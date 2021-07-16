@@ -240,6 +240,10 @@ header {
   margin-top: 35px;
 }
 
+.button-upgrade:hover {
+  transform: scale(1.1);
+}
+
 .button-upgrade .my-btn-upgrade {
   color: #fff;
   text-transform: uppercase;
@@ -248,10 +252,10 @@ header {
   padding: 12px 35px;
 }
 
-.button-upgrade .my-btn-upgrade:hover {
+/* .button-upgrade .my-btn-upgrade:hover {
   font-size: 16px;
 }
-
+ */
 /* MAIN */
 main section {
   padding: 15px 20px;
@@ -287,6 +291,7 @@ main section {
 /* RECENTLY PLAYED SECTION */
 .box-album-cover {
   margin-right: 15px;
+  margin-bottom: 15px;
   width: calc(100% / 2 - 15px);
 }
 
@@ -431,7 +436,7 @@ footer section {
 }
 
 .music-commands .fa-play-circle:hover {
-  font-size: 32px;
+  transform: scale(1.1);
 }
 
 /* section right */
